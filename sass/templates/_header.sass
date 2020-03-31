@@ -1,12 +1,16 @@
 .header
-  padding: 27px 0 10px
+  &__container
+    padding-top: 2.1rem
+    padding-left: 27.214rem
 .menu
   display: flex
-  justify-content: space-between
   align-items: center
   &__logo
     display: flex
     align-items: center
+    margin-right: 13.9rem
+  &__nav
+    margin-right: 1.5rem
 .logo
   &__link
     font-family: 'Ubuntu', sans-serif
@@ -17,8 +21,9 @@
     font-weight: 700
     letter-spacing: 0.05rem
   &__icon
-    width: 51px
-    height: 51px
+    width: 41px
+    height: 41px
+    margin-right: 0.929rem
 .nav
   &__item
     display: inline-block
@@ -31,12 +36,14 @@
     font-weight: 300
     &::after
       display: block
+      margin: auto
       content: ''
       width: 0%
       height: 2px
       background-color: $coral
+      transition: width 0.5s ease-in-out
     &:hover::after
-      width: 100%
+      width: 65%
 .phone
   font-family: 'Ubuntu', sans-serif
   color: $dark

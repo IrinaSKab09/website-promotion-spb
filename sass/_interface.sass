@@ -1,15 +1,18 @@
 .button
-  padding: 3px 31px
+  padding: 2px 29px
   border: none
   border-radius: 22px
   font-size: 1.143rem
   line-height: 2.666rem
   &--coral
     background-color: $coral
+    border: 2px solid $coral
     color: $light
-  &:hover
-    background-color: $grey
-    cursor: pointer
-.hero
-  &__button
-    padding: 6px 41px
+    &:hover
+      background-color: transparent
+      color: $coral
+      cursor: pointer
+      transition: all 1s ease
+  &--bg
+    padding: 4px 38px
+    border-radius: 25px
