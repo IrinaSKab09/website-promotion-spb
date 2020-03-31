@@ -1,0 +1,49 @@
+.header
+  padding: 27px 0 10px
+.menu
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__logo
+    display: flex
+    align-items: center
+.logo
+  &__link
+    font-family: 'Ubuntu', sans-serif
+    font-size: 1.857rem
+    color: $dark
+    text-transform: uppercase
+    text-decoration: none
+    font-weight: 700
+    letter-spacing: 0.05rem
+  &__icon
+    width: 51px
+    height: 51px
+.nav
+  &__item
+    display: inline-block
+    margin-right: 1.571rem
+    font-family: 'Ubuntu', sans-serif
+    font-size: 1.143rem
+    color: $dark
+    text-transform: uppercase
+    text-decoration: none
+    font-weight: 300
+    &::after
+      display: block
+      content: ''
+      width: 0%
+      height: 2px
+      background-color: $coral
+    &:hover::after
+      width: 100%
+.phone
+  font-family: 'Ubuntu', sans-serif
+  color: $dark
+  font-size: 1.286rem
+  line-height: 2.666rem
+  text-decoration: none
+.contacts
+  &__phone
+    margin-right: 3.071rem
+  

@@ -1,0 +1,53 @@
+.hero
+  display: flex
+  align-items: center
+  &__content
+    display: flex
+    align-items: center
+    max-width: 1378px
+    min-height: 756px
+    margin: auto
+    padding-top: 107px
+    padding-bottom: 285px;
+  &__social
+    display: flex
+    flex-direction: column
+    margin-left: 4.5rem
+    &::before
+      content: ''
+      margin-bottom: 38px
+      width: 3px
+      height: 620px
+      border-radius: 2px
+      background-color: $coral
+  &__link
+    margin-bottom: 27px
+    width: 21px
+    height: 21px
+  &__title
+    margin-bottom: 37px
+    max-width: 43.643rem
+    color: $dark
+    font-family: 'Ubuntu', sans-serif
+    font-size: 4.429rem
+    letter-spacing: -3.44px
+    font-weight: 700
+    line-height: 5.429rem
+  &__text
+    margin-bottom: 38px
+    margin-left: 3px
+    max-width: 40.357rem
+    color: $grey
+    font-family: 'Ubuntu', sans-serif
+    font-weight: 300
+    font-size: 1.429rem
+    line-height: 2.071rem
+  &__image
+    max-width: 54.5rem
+    max-height: 54rem
+.social
+  display: flex
+  align-items: center
+.title
+  &--coral
+    color: $coral
