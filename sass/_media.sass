@@ -1,53 +1,102 @@
-@media screen and (max-width: 1800px)
-  .hero
-    &__content
-      margin-left: 10.8rem
-      margin-right: 5rem
-@media screen and (max-width: 1700px)
-  .header
-    &__container
-      padding-left: 20rem
-  .hero
-    &__title
-      max-width: 35.714rem
-      font-size: 3.5rem
-    &__text
-      font-size: 1.25rem
-    &__image
-      max-width: 45rem
-      max-height: 40rem
-@media screen and (max-width: 1500px)
-  .header
-    &__container
-      padding-left: 10rem
-  .menu
-    &__logo
-      margin-right: 5rem
-  .hero
+// @media screen and (max-width: 1640px)
+//   .hero
+//     &__image
+//       max-width: 47rem
+//       max-height: 46rem
+// @media screen and (max-width: 1540px)
+//   .hero
+//     &__social
+//       &::before
+//         height: 520px
+// @media screen and (max-width: 1410px)
+//   .hero
+//     &__image
+//       max-width: 43rem
+//       max-height: 42rem
+@media screen and (max-width: 1350px)
+  .hero  
     &__social
-      &::before
-        height: 520px
-  
-@media screen and (max-width: 1256px)
+      margin-left: 2rem
+@media screen and (max-width: 1266px)
   html
     font-size: 12px
-  .header
-    padding: 27px 24px 10px
-  .nav
-    &__item
-      margin-right: 1.2rem
-  .hero  
-    padding: 0 20px
-    &__social
-      display: flex
-      flex-direction: column
-      margin-left: 2rem
+  .menu
+    &__logo
+      margin-right: 10rem
+  .hero
+    &__content
+      padding-bottom: 35rem
+    &__title
+      max-width: 44rem
+  .statistics
+    &__information
+      width: 77rem
 @media screen and (max-width: 1100px)
   .header
     &__container
-      padding-left: 5rem
+      max-width: 80rem
   .menu
-    justify-content: space-between
+    &__logo
+      margin-right: 8rem
+  .hero
+    &__content
+      max-width: 80rem
+      padding-bottom: 40rem
+    &__image
+      max-width: 40rem
+      max-height: 39rem
+    &__title
+      margin-top: 5rem
+      max-width: 40rem
+      font-size: 4rem
+@media screen and (max-width: 1040px)
+  .header
+    &__container
+      max-width: 75rem
+  .menu
+    &__logo
+      margin-right: 5rem
+  .logo
+    &__link
+      font-size: 1.4rem
+  .hero
+    &__content
+      max-width: 75rem
+    &__image
+      max-width: 40rem
+      max-height: 39rem
+      margin-left: 35rem
+    &__title
+      max-width: 35rem
+      font-size: 3.5rem
+    &__text
+      max-width: 35rem
+      font-size: 1.4rem
+@media screen and (max-width: 980px)
+  .contacts
+    &__phone
+      margin-right: 1rem
+  .hero
+    &__social
+      display: none
+  .statistics
+    &__information
+      width: 65rem
+    &__numder
+      font-size: 3.5rem
+    &__text
+      font-size: 1.3rem
+@media screen and (max-width: 915px)
+  .header
+    &__container
+      max-width: 67rem
+  .hero
+    &__content
+      margin-bottom: 5rem
+      max-width: 67rem
+    &__image
+      max-width: 30rem
+      max-height: 29rem
   .logo
     &__link
       font-size: 1rem
@@ -60,37 +109,41 @@
       font-size: 1rem
   .phone
     font-size: 1rem
-  .button
-    padding: 2px 21px
+@media screen and (max-width: 860px)
   .hero
-    &__social
-      display: none
     &__content
-      margin-left: 5rem
-    &__image
+      margin-bottom: 0
+  .statistics
+    &__information
+      display: none
+@media screen and (max-width: 840px)
+  .header
+    &__container
       max-width: 40rem
-      max-height: 35rem
-    &__content
-      max-width: 75rem
-    &__title
-      max-width: 28rem
-      font-size: 3rem
-      line-height: 4rem
-    &__text
-      max-width: 35rem
-      font-size: 1.1rem
-@media screen and (max-width: 855px)
   .nav
-    display: none
+    &__item
+      display: none
   .hero
+    &__title
+      font-size: 3.5rem
+      line-height: 3.5rem
+    &__text
+      max-width: 30rem
+      font-size: 1.3rem
+@media screen and (max-width: 800px)
+  .wrapper
+    background: #e3fbdd
+  .hero
+    position: static
+    min-height: 55rem
+    &__description
+      position: static
     &__image
       display: none
-@media screen and (max-width: 576px)
-  .wrapper
-    background-color: #e3fbdd
-  .hero
     &__content
-      margin-top: 5rem
+      max-width: 40rem
+      padding-bottom: 6rem
+@media screen and (max-width: 576px)
   .menu
     display: none
     flex-direction: column
@@ -98,7 +151,7 @@
     right: 0
     top: 0
     padding: 1rem
-    width: 200px
+    width: 100%
     background-color: $light
     &__logo
       display: flex
@@ -144,6 +197,7 @@
     display: flex
   .nav
     &__item
+      display: block
       margin-right: 0
       margin-bottom: 1rem
   .logo
@@ -153,39 +207,41 @@
     &__phone
       margin-right: 0
       text-align: center
-.menu__button-active 
-  height: 0
-.menu__button-active:before 
-  transform: rotate(45deg)
-  margin-top: 0
-.menu__button-active:after 
-  transform: rotate(-45deg)
-  margin-top: 0
-
+  .menu__button-active 
+    height: 0
+  .menu__button-active:before 
+    transform: rotate(45deg)
+    margin-top: 0
+  .menu__button-active:after 
+    transform: rotate(-45deg)
+    margin-top: 0
+  .statistics
+    &__video
+      height: 40rem
+  .video
+    &__icon
+      margin: auto
 @media screen and (max-width: 500px)
   .hero
-    &__content
-      margin-left: 1rem
     &__title
+      margin-top: 2rem
       max-width: 23rem
       font-size: 2.5rem
       line-height: 3.5rem
     &__text
       max-width: 30rem
-      font-size: 1rem  
+      font-size: 1.2rem
 @media screen and (max-width: 380px)  
   .hero
     &__title
-      max-width: 17rem
-      font-size: 2rem
+      max-width: 20rem
+      font-size: 2.2rem
       line-height: 3rem
     &__text
-      max-width: 20rem
-      font-size: 1rem    
-@media screen and (max-width: 374px)
-  .button
-    padding: 2px 11px
-    font-size: 1rem
-    line-height: 2rem
-  .button
-    padding: 3px 20px
+      max-width: 22rem
+      font-size: 1.1rem
+  .statistics
+    &__video
+      height: 20rem
+
+    

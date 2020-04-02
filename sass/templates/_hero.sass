@@ -1,12 +1,13 @@
 .hero
   display: flex
+  position: relative
+  min-height: 72.929rem
   &__content
     display: flex
-    align-items: center
-    max-width: 99rem
-    margin-left: 20.8rem
-    padding-top: 115px
-    padding-bottom: 285px
+    margin: auto
+    padding-top: 8.357rem
+    padding-bottom: 17.857rem
+    max-width: 83.571rem
   &__social
     display: flex
     flex-direction: column
@@ -23,8 +24,11 @@
     margin-bottom: 27px
     width: 21px
     height: 21px
+  &__description
+    position: absolute
   &__title
-    margin-bottom: 37px
+    margin-top: 14.143rem
+    margin-bottom: 2.743rem
     max-width: 46.642rem
     color: $dark
     font-family: 'Ubuntu', sans-serif
@@ -33,8 +37,7 @@
     font-weight: 700
     line-height: 5.429rem
   &__text
-    margin-bottom: 38px
-    margin-left: 3px
+    margin-bottom: 2.857rem
     max-width: 40.357rem
     color: $grey
     font-family: 'Ubuntu', sans-serif
@@ -42,6 +45,7 @@
     font-size: 1.429rem
     line-height: 2.071rem
   &__image
+    margin-left: 42.5rem
     max-width: 54.5rem
     max-height: 54rem
 .social
